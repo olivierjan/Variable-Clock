@@ -1,0 +1,1104 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46K42 ]
+[d frameptr 16353 ]
+"55 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/i2c1.c
+[e E16051 . `uc
+I2C1_GOOD 0
+I2C1_FAIL_TIMEOUT 1
+]
+"1 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"72 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"593
+[v _utoa utoa `(i  1 s 2 utoa ]
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1368
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"4 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"57 /Users/ojan/MPLABXProjects/Variable Clock.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"157
+[v _saveCounter saveCounter `(v  1 e 1 0 ]
+"57 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/i2c1.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"80
+[v _wait4Start wait4Start `T(v  1 s 1 wait4Start ]
+"100
+[v _wait4BusFree wait4BusFree `T(v  1 s 1 wait4BusFree ]
+"120
+[v _sendByte sendByte `T(v  1 s 1 sendByte ]
+"141
+[v _receiveByte receiveByte `T(uc  1 s 1 receiveByte ]
+"162
+[v _wait4Stop wait4Stop `T(v  1 s 1 wait4Stop ]
+"182
+[v _wait4MDRSetcount wait4MDRSetcount `T(v  1 s 1 wait4MDRSetcount ]
+"203
+[v _i2c1_write1ByteRegister i2c1_write1ByteRegister `(v  1 e 1 0 ]
+"247
+[v _i2c1_writeNBytesRegister i2c1_writeNBytesRegister `(v  1 e 1 0 ]
+"52 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"75
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"58 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/nco1.c
+[v _NCO1_Initialize NCO1_Initialize `(v  1 e 1 0 ]
+"55 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"86 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+"179
+[v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
+"201
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+"229
+[v _putch putch `(v  1 e 1 0 ]
+"238
+[v _UART1_Transmit_ISR UART1_Transmit_ISR `(v  1 e 1 0 ]
+"258
+[v _UART1_Receive_ISR UART1_Receive_ISR `(v  1 e 1 0 ]
+"282
+[v _UART1_RxDataHandler UART1_RxDataHandler `(v  1 e 1 0 ]
+"292
+[v _UART1_DefaultFramingErrorHandler UART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"294
+[v _UART1_DefaultOverrunErrorHandler UART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"296
+[v _UART1_DefaultErrorHandler UART1_DefaultErrorHandler `(v  1 e 1 0 ]
+"300
+[v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+"304
+[v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"308
+[v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
+"314
+[v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
+"318
+[v _UART1_SetTxInterruptHandler UART1_SetTxInterruptHandler `(v  1 e 1 0 ]
+"316 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+[v _OLED_Init OLED_Init `(v  1 e 1 0 ]
+"378
+[v _OLED_SetFont OLED_SetFont `(v  1 e 1 0 ]
+"400
+[v _OLED_Update OLED_Update `(v  1 e 1 0 ]
+"435
+[v _OLED_ClearDisplay OLED_ClearDisplay `(v  1 e 1 0 ]
+"457
+[v _OLED_DrawPixel OLED_DrawPixel `(v  1 e 1 0 ]
+"485
+[v _OLED_Line OLED_Line `(v  1 e 1 0 ]
+"610
+[v _OLED_V_Line OLED_V_Line `(v  1 e 1 0 ]
+"638
+[v _OLED_H_Line OLED_H_Line `(v  1 e 1 0 ]
+"708
+[v _OLED_Image OLED_Image `(v  1 e 1 0 ]
+"774
+[v _OLED_Write OLED_Write `(v  1 e 1 0 ]
+"857
+[v _OLED_Write_Text OLED_Write_Text `(v  1 e 1 0 ]
+"881
+[v _ssd1306_command ssd1306_command `(v  1 e 1 0 ]
+"905
+[v _width width `(uc  1 e 1 0 ]
+"910
+[v _height height `(uc  1 e 1 0 ]
+"518 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.h
+[v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
+"536
+[v _UART1_TxInterruptHandler UART1_TxInterruptHandler `*.37(v  1 e 2 0 ]
+[s S149 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+`uc 1 I2C1IE 1 0 :1:1 
+`uc 1 I2C1EIE 1 0 :1:2 
+`uc 1 U1RXIE 1 0 :1:3 
+`uc 1 U1TXIE 1 0 :1:4 
+`uc 1 U1EIE 1 0 :1:5 
+`uc 1 U1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"3668 /Applications/microchip/xc8/v2.10/pic/include/pic18f46k42.h
+[s S158 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S164 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S169 . 1 `S149 1 . 1 0 `S158 1 . 1 0 `S164 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES169  1 e 1 @14739 ]
+[s S194 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+`uc 1 I2C1IF 1 0 :1:1 
+`uc 1 I2C1EIF 1 0 :1:2 
+`uc 1 U1RXIF 1 0 :1:3 
+`uc 1 U1TXIF 1 0 :1:4 
+`uc 1 U1EIF 1 0 :1:5 
+`uc 1 U1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"4314
+[s S203 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S208 . 1 `S194 1 . 1 0 `S203 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES208  1 e 1 @14755 ]
+"4686
+[v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
+"4763
+[v _PMD1 PMD1 `VEuc  1 e 1 @14785 ]
+"4833
+[v _PMD2 PMD2 `VEuc  1 e 1 @14786 ]
+"4878
+[v _PMD3 PMD3 `VEuc  1 e 1 @14787 ]
+"4940
+[v _PMD4 PMD4 `VEuc  1 e 1 @14788 ]
+"4973
+[v _PMD5 PMD5 `VEuc  1 e 1 @14789 ]
+"5018
+[v _PMD6 PMD6 `VEuc  1 e 1 @14790 ]
+"5068
+[v _PMD7 PMD7 `VEuc  1 e 1 @14791 ]
+"5207
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"5347
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @14811 ]
+"5499
+[v _OSCEN OSCEN `VEuc  1 e 1 @14813 ]
+"5550
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
+"5654
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"6916
+[v _RB0PPS RB0PPS `VEuc  1 e 1 @14856 ]
+"6966
+[v _RB1PPS RB1PPS `VEuc  1 e 1 @14857 ]
+"7766
+[v _RD1PPS RD1PPS `VEuc  1 e 1 @14873 ]
+"8266
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+"8328
+[v _WPUA WPUA `VEuc  1 e 1 @14913 ]
+"8390
+[v _ODCONA ODCONA `VEuc  1 e 1 @14914 ]
+"8452
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @14915 ]
+"8514
+[v _INLVLA INLVLA `VEuc  1 e 1 @14916 ]
+"8886
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+"8948
+[v _WPUB WPUB `VEuc  1 e 1 @14929 ]
+"9010
+[v _ODCONB ODCONB `VEuc  1 e 1 @14930 ]
+"9072
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @14931 ]
+"9134
+[v _INLVLB INLVLB `VEuc  1 e 1 @14932 ]
+"9506
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @14938 ]
+"9614
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @14939 ]
+"9722
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"9784
+[v _WPUC WPUC `VEuc  1 e 1 @14945 ]
+"9846
+[v _ODCONC ODCONC `VEuc  1 e 1 @14946 ]
+"9908
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @14947 ]
+"9970
+[v _INLVLC INLVLC `VEuc  1 e 1 @14948 ]
+"10342
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @14954 ]
+"10450
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @14955 ]
+"10558
+[v _ANSELD ANSELD `VEuc  1 e 1 @14960 ]
+"10620
+[v _WPUD WPUD `VEuc  1 e 1 @14961 ]
+"10682
+[v _ODCOND ODCOND `VEuc  1 e 1 @14962 ]
+"10744
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @14963 ]
+"10806
+[v _INLVLD INLVLD `VEuc  1 e 1 @14964 ]
+"10992
+[v _RD0I2C RD0I2C `VEuc  1 e 1 @14970 ]
+"11100
+[v _RD1I2C RD1I2C `VEuc  1 e 1 @14971 ]
+"11208
+[v _ANSELE ANSELE `VEuc  1 e 1 @14976 ]
+"11240
+[v _WPUE WPUE `VEuc  1 e 1 @14977 ]
+"11278
+[v _ODCONE ODCONE `VEuc  1 e 1 @14978 ]
+"11310
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @14979 ]
+"11342
+[v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
+"12243
+[v _I2C1SCLPPS I2C1SCLPPS `VEuc  1 e 1 @15073 ]
+"12263
+[v _I2C1SDAPPS I2C1SDAPPS `VEuc  1 e 1 @15074 ]
+"12323
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @15077 ]
+"24795
+[v _I2C1RXB I2C1RXB `VEuc  1 e 1 @15722 ]
+"24815
+[v _I2C1TXB I2C1TXB `VEuc  1 e 1 @15723 ]
+"24835
+[v _I2C1CNT I2C1CNT `VEuc  1 e 1 @15724 ]
+"24925
+[v _I2C1ADB1 I2C1ADB1 `VEuc  1 e 1 @15726 ]
+"25027
+[v _I2C1CON0 I2C1CON0 `VEuc  1 e 1 @15731 ]
+[s S487 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 MDR 1 0 :1:3 
+`uc 1 CSTR 1 0 :1:4 
+`uc 1 S 1 0 :1:5 
+`uc 1 RSEN 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"25049
+[s S494 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 I2CEN 1 0 :1:7 
+]
+[u S500 . 1 `S487 1 . 1 0 `S494 1 . 1 0 ]
+[v _I2C1CON0bits I2C1CON0bits `VES500  1 e 1 @15731 ]
+"25104
+[v _I2C1CON1 I2C1CON1 `VEuc  1 e 1 @15732 ]
+"25161
+[v _I2C1CON2 I2C1CON2 `VEuc  1 e 1 @15733 ]
+"25237
+[v _I2C1ERR I2C1ERR `VEuc  1 e 1 @15734 ]
+[s S529 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 D 1 0 :1:3 
+`uc 1 R 1 0 :1:4 
+`uc 1 MMA 1 0 :1:5 
+`uc 1 SMA 1 0 :1:6 
+`uc 1 BFRE 1 0 :1:7 
+]
+"25357
+[s S536 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 DATA 1 0 :1:3 
+`uc 1 READ 1 0 :1:4 
+]
+[s S540 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_ADDRESS 1 0 :1:3 
+`uc 1 NOT_WRITE 1 0 :1:4 
+]
+[s S544 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_A 1 0 :1:3 
+`uc 1 NOT_W 1 0 :1:4 
+]
+[u S548 . 1 `S529 1 . 1 0 `S536 1 . 1 0 `S540 1 . 1 0 `S544 1 . 1 0 ]
+[v _I2C1STAT0bits I2C1STAT0bits `VES548  1 e 1 @15735 ]
+[s S573 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CLRBF 1 0 :1:2 
+`uc 1 RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 TXWE 1 0 :1:7 
+]
+"25434
+[u S582 . 1 `S573 1 . 1 0 ]
+[v _I2C1STAT1bits I2C1STAT1bits `VES582  1 e 1 @15736 ]
+"25464
+[v _I2C1PIR I2C1PIR `VEuc  1 e 1 @15737 ]
+[s S596 . 1 `uc 1 SCIF 1 0 :1:0 
+`uc 1 RSCIF 1 0 :1:1 
+`uc 1 PCIF 1 0 :1:2 
+`uc 1 ADRIF 1 0 :1:3 
+`uc 1 WRIF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKTIF 1 0 :1:6 
+`uc 1 CNTIF 1 0 :1:7 
+]
+"25491
+[s S605 . 1 `uc 1 SC1IF 1 0 :1:0 
+`uc 1 RSC1IF 1 0 :1:1 
+`uc 1 PC1IF 1 0 :1:2 
+`uc 1 ADR1IF 1 0 :1:3 
+`uc 1 WR1IF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT1IF 1 0 :1:6 
+`uc 1 CNT1IF 1 0 :1:7 
+]
+[u S614 . 1 `S596 1 . 1 0 `S605 1 . 1 0 ]
+[v _I2C1PIRbits I2C1PIRbits `VES614  1 e 1 @15737 ]
+"25668
+[v _I2C1CLK I2C1CLK `VEuc  1 e 1 @15739 ]
+"26758
+[v _U1RXB U1RXB `VEuc  1 e 1 @15848 ]
+"26816
+[v _U1TXB U1TXB `VEuc  1 e 1 @15850 ]
+"26881
+[v _U1P1L U1P1L `VEuc  1 e 1 @15852 ]
+"26901
+[v _U1P1H U1P1H `VEuc  1 e 1 @15853 ]
+"26928
+[v _U1P2L U1P2L `VEuc  1 e 1 @15854 ]
+"26948
+[v _U1P2H U1P2H `VEuc  1 e 1 @15855 ]
+"26975
+[v _U1P3L U1P3L `VEuc  1 e 1 @15856 ]
+"26995
+[v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
+"27015
+[v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
+"27131
+[v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
+"27211
+[v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
+"27360
+[v _U1BRGL U1BRGL `VEuc  1 e 1 @15861 ]
+"27380
+[v _U1BRGH U1BRGH `VEuc  1 e 1 @15862 ]
+"27400
+[v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
+"27530
+[v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
+"27586
+[v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
+[s S362 . 1 `uc 1 TXCIF 1 0 :1:0 
+`uc 1 RXFOIF 1 0 :1:1 
+`uc 1 RXBKIF 1 0 :1:2 
+`uc 1 FERIF 1 0 :1:3 
+`uc 1 CERIF 1 0 :1:4 
+`uc 1 ABDOVF 1 0 :1:5 
+`uc 1 PERIF 1 0 :1:6 
+`uc 1 TXMTIF 1 0 :1:7 
+]
+"27613
+[s S371 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+`uc 1 U1RXFOIF 1 0 :1:1 
+`uc 1 U1RXBKIF 1 0 :1:2 
+`uc 1 U1FERIF 1 0 :1:3 
+`uc 1 U1CERIF 1 0 :1:4 
+`uc 1 U1ABDOVF 1 0 :1:5 
+`uc 1 U1PERIF 1 0 :1:6 
+`uc 1 U1TXMTIF 1 0 :1:7 
+]
+[u S380 . 1 `S362 1 . 1 0 `S371 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES380  1 e 1 @15865 ]
+"27698
+[v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
+"35024
+[v _NCO1ACCL NCO1ACCL `VEuc  1 e 1 @16184 ]
+"35152
+[v _NCO1ACCH NCO1ACCH `VEuc  1 e 1 @16185 ]
+"35280
+[v _NCO1ACCU NCO1ACCU `VEuc  1 e 1 @16186 ]
+"35417
+[v _NCO1INCL NCO1INCL `VEuc  1 e 1 @16187 ]
+"35545
+[v _NCO1INCH NCO1INCH `VEuc  1 e 1 @16188 ]
+"35673
+[v _NCO1INCU NCO1INCU `VEuc  1 e 1 @16189 ]
+"35801
+[v _NCO1CON NCO1CON `VEuc  1 e 1 @16190 ]
+[s S739 . 1 `uc 1 PFM 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 POL 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"35824
+[s S746 . 1 `uc 1 NCO1PFM 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 NCO1POL 1 0 :1:4 
+`uc 1 NCO1OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 NCO1EN 1 0 :1:7 
+]
+"35824
+[u S753 . 1 `S739 1 . 1 0 `S746 1 . 1 0 ]
+"35824
+"35824
+[v _NCO1CONbits NCO1CONbits `VES753  1 e 1 @16190 ]
+"35869
+[v _NCO1CLK NCO1CLK `VEuc  1 e 1 @16191 ]
+"45726
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+"45838
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+"45950
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+"46062
+[v _LATD LATD `VEuc  1 e 1 @16317 ]
+[s S865 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"46089
+[s S874 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+"46089
+[u S883 . 1 `S865 1 . 1 0 `S874 1 . 1 0 ]
+"46089
+"46089
+[v _LATDbits LATDbits `VES883  1 e 1 @16317 ]
+"46174
+[v _LATE LATE `VEuc  1 e 1 @16318 ]
+"46226
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+"46288
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"46350
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+"46412
+[v _TRISD TRISD `VEuc  1 e 1 @16325 ]
+"46474
+[v _TRISE TRISE `VEuc  1 e 1 @16326 ]
+[s S812 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"46530
+[s S821 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 LVDIN 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 RJPU 1 0 :1:7 
+]
+"46530
+[u S827 . 1 `S812 1 . 1 0 `S821 1 . 1 0 ]
+"46530
+"46530
+[v _PORTAbits PORTAbits `VES827  1 e 1 @16330 ]
+[s S905 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"46768
+[s S914 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+"46768
+[u S917 . 1 `S905 1 . 1 0 `S914 1 . 1 0 ]
+"46768
+"46768
+[v _PORTDbits PORTDbits `VES917  1 e 1 @16333 ]
+[s S123 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"46955
+[s S131 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"46955
+[u S134 . 1 `S123 1 . 1 0 `S131 1 . 1 0 ]
+"46955
+"46955
+[v _INTCON0bits INTCON0bits `VES134  1 e 1 @16338 ]
+"55 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v doprnt@width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"55 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/i2c1.c
+[v _lastError lastError `E16051  1 s 1 lastError ]
+"63 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+[v _uart1TxHead uart1TxHead `VEuc  1 s 1 uart1TxHead ]
+"64
+[v _uart1TxTail uart1TxTail `VEuc  1 s 1 uart1TxTail ]
+"65
+[v _uart1TxBuffer uart1TxBuffer `VE[8]uc  1 s 8 uart1TxBuffer ]
+"66
+[v _uart1TxBufferRemaining uart1TxBufferRemaining `VEuc  1 e 1 0 ]
+"68
+[v _uart1RxHead uart1RxHead `VEuc  1 s 1 uart1RxHead ]
+"69
+[v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
+"70
+[v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
+[s S261 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"71
+[u S266 . 1 `S261 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S266  1 s 8 uart1RxStatusBuffer ]
+"72
+[v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
+"73
+[v _uart1RxLastError uart1RxLastError `VES266  1 s 1 uart1RxLastError ]
+"78
+[v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"79
+[v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"80
+[v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
+"8 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+[v _LARGE_FONTS LARGE_FONTS `C[1524]uc  1 e 1524 0 ]
+[s S988 _Current_Font_s 7 `*.32Cuc 1 font 2 0 `uc 1 x_size 1 2 `uc 1 y_size 1 3 `uc 1 offset 1 4 `uc 1 numchars 1 5 `uc 1 inverted 1 6 ]
+"233
+[v _cfont cfont `S988  1 s 7 cfont ]
+"235
+[v _SOjavaLogo SOjavaLogo `C[1024]uc  1 e 1024 0 ]
+"304
+[v _buffer buffer `[1024]uc  1 s 1024 buffer ]
+"57 /Users/ojan/MPLABXProjects/Variable Clock.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"79
+[v main@frequencytext frequencytext `[48]uc  1 a 48 30 ]
+"77
+[v main@FREQvalue FREQvalue `uo  1 a 8 79 ]
+"76
+[v main@NCOCounter NCOCounter `um  1 a 3 87 ]
+"78
+[v main@automaticclock automaticclock `a  1 a 1 78 ]
+"155
+} 0
+"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S1675 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+"13
+[v sprintf@f f `S1675  1 a 6 16 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 14 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 0 ]
+[v sprintf@fmt fmt `*.32Cuc  1 p 2 2 ]
+"23
+} 0
+"1368 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1371
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 87 ]
+[s S1171 _IO_FILE 0 ]
+"1368
+[v vfprintf@fp fp `*.39S1171  1 p 2 81 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 83 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 85 ]
+"1382
+} 0
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"675
+[v vfpfcnvrt@llu llu `uo  1 a 8 71 ]
+"673
+[v vfpfcnvrt@done done `i  1 a 2 79 ]
+[s S1171 _IO_FILE 0 ]
+"670
+[v vfpfcnvrt@fp fp `*.39S1171  1 p 2 61 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 63 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 65 ]
+"1365
+} 0
+"593
+[v _utoa utoa `(i  1 s 2 utoa ]
+{
+"596
+[v utoa@n n `uo  1 a 8 51 ]
+"595
+[v utoa@i i `i  1 a 2 59 ]
+[v utoa@w w `i  1 a 2 49 ]
+[v utoa@p p `i  1 a 2 47 ]
+[s S1171 _IO_FILE 0 ]
+"593
+[v utoa@fp fp `*.39S1171  1 p 2 29 ]
+[v utoa@d d `uo  1 p 8 31 ]
+"619
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 27 ]
+[v pad@i i `i  1 a 2 25 ]
+[s S1171 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S1171  1 p 2 18 ]
+[v pad@buf buf `*.39uc  1 p 2 20 ]
+[v pad@p p `i  1 p 2 22 ]
+"95
+} 0
+"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 16 ]
+"10
+[v fputs@c c `uc  1 a 1 15 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 11 ]
+[s S1675 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S1675  1 p 2 13 ]
+"19
+} 0
+"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[s S1675 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S1675  1 p 2 4 ]
+"21
+} 0
+"229 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+"231
+[v putch@txData txData `uc  1 a 1 1 ]
+"232
+} 0
+"201
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+{
+[v UART1_Write@txData txData `uc  1 a 1 wreg ]
+[v UART1_Write@txData txData `uc  1 a 1 wreg ]
+[v UART1_Write@txData txData `uc  1 a 1 0 ]
+"222
+} 0
+"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 16 ]
+"9
+[v ___lomod@dividend dividend `uo  1 p 8 0 ]
+[v ___lomod@divisor divisor `uo  1 p 8 8 ]
+"27
+} 0
+"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 16 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 24 ]
+"9
+[v ___lodiv@dividend dividend `uo  1 p 8 0 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 8 ]
+"32
+} 0
+"157 /Users/ojan/MPLABXProjects/Variable Clock.X/main.c
+[v _saveCounter saveCounter `(v  1 e 1 0 ]
+{
+[v saveCounter@Counter Counter `um  1 p 3 0 ]
+"164
+} 0
+"91 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+{
+"93
+[v ___omul@product product `uo  1 a 8 16 ]
+"91
+[v ___omul@multiplier multiplier `uo  1 p 8 0 ]
+[v ___omul@multiplicand multiplicand `uo  1 p 8 8 ]
+"354
+} 0
+"50 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"86 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+{
+"158
+} 0
+"318
+[v _UART1_SetTxInterruptHandler UART1_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetTxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"320
+} 0
+"314
+[v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetRxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"316
+} 0
+"304
+[v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"306
+} 0
+"300
+[v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"302
+} 0
+"308
+[v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"310
+} 0
+"75 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"93
+} 0
+"55 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"143
+} 0
+"61 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"58 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/nco1.c
+[v _NCO1_Initialize NCO1_Initialize `(v  1 e 1 0 ]
+{
+"81
+} 0
+"52 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"857 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+[v _OLED_Write_Text OLED_Write_Text `(v  1 e 1 0 ]
+{
+[v OLED_Write_Text@x x `uc  1 a 1 wreg ]
+"860
+[v OLED_Write_Text@length length `uc  1 a 1 47 ]
+"861
+[v OLED_Write_Text@cursorpos cursorpos `uc  1 a 1 46 ]
+"859
+[v OLED_Write_Text@cnt cnt `uc  1 a 1 45 ]
+"857
+[v OLED_Write_Text@x x `uc  1 a 1 wreg ]
+[v OLED_Write_Text@y y `uc  1 p 1 40 ]
+[v OLED_Write_Text@text text `*.34uc  1 p 2 41 ]
+"861
+[v OLED_Write_Text@x x `uc  1 a 1 48 ]
+"879
+} 0
+"5 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.34Cuc  1 a 2 2 ]
+"5
+[v strlen@s s `*.34Cuc  1 p 2 0 ]
+"12
+} 0
+"774 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+[v _OLED_Write OLED_Write `(v  1 e 1 0 ]
+{
+[v OLED_Write@x x `uc  1 a 1 wreg ]
+"778
+[v OLED_Write@cnt cnt `us  1 a 2 36 ]
+"777
+[v OLED_Write@rowcnt rowcnt `us  1 a 2 34 ]
+"782
+[v OLED_Write@cy cy `s  1 a 2 32 ]
+[v OLED_Write@cx cx `s  1 a 2 30 ]
+"776
+[v OLED_Write@font_idx font_idx `us  1 a 2 28 ]
+"783
+[v OLED_Write@cbit cbit `s  1 a 2 26 ]
+"782
+[v OLED_Write@cbyte cbyte `s  1 a 2 24 ]
+"780
+[v OLED_Write@temp temp `us  1 a 2 22 ]
+"779
+[v OLED_Write@b b `uc  1 a 1 38 ]
+"774
+[v OLED_Write@x x `uc  1 a 1 wreg ]
+[v OLED_Write@y y `uc  1 p 1 14 ]
+[v OLED_Write@value value `uc  1 p 1 15 ]
+"777
+[v OLED_Write@x x `uc  1 a 1 39 ]
+"846
+} 0
+"15 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 12 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 8 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 10 ]
+"53
+} 0
+"7 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"457 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+[v _OLED_DrawPixel OLED_DrawPixel `(v  1 e 1 0 ]
+{
+[v OLED_DrawPixel@x x `us  1 p 2 0 ]
+[v OLED_DrawPixel@y y `us  1 p 2 2 ]
+[v OLED_DrawPixel@color color `uc  1 p 1 4 ]
+"468
+} 0
+"905
+[v _width width `(uc  1 e 1 0 ]
+{
+"908
+} 0
+"910
+[v _height height `(uc  1 e 1 0 ]
+{
+"913
+} 0
+"316
+[v _OLED_Init OLED_Init `(v  1 e 1 0 ]
+{
+"366
+} 0
+"400
+[v _OLED_Update OLED_Update `(v  1 e 1 0 ]
+{
+"402
+[v OLED_Update@i i `us  1 a 2 10 ]
+"403
+[v OLED_Update@x x `uc  1 a 1 9 ]
+"427
+} 0
+"881
+[v _ssd1306_command ssd1306_command `(v  1 e 1 0 ]
+{
+[v ssd1306_command@command command `uc  1 a 1 wreg ]
+[v ssd1306_command@command command `uc  1 a 1 wreg ]
+"885
+[v ssd1306_command@command command `uc  1 a 1 5 ]
+"891
+} 0
+"203 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/i2c1.c
+[v _i2c1_write1ByteRegister i2c1_write1ByteRegister `(v  1 e 1 0 ]
+{
+[v i2c1_write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v i2c1_write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v i2c1_write1ByteRegister@reg reg `uc  1 p 1 2 ]
+[v i2c1_write1ByteRegister@data data `uc  1 p 1 3 ]
+"205
+[v i2c1_write1ByteRegister@address address `uc  1 a 1 4 ]
+"214
+} 0
+"247
+[v _i2c1_writeNBytesRegister i2c1_writeNBytesRegister `(v  1 e 1 0 ]
+{
+[v i2c1_writeNBytesRegister@address address `uc  1 a 1 wreg ]
+"249
+[v i2c1_writeNBytesRegister@dataPointer dataPointer `*.39uc  1 a 2 7 ]
+"247
+[v i2c1_writeNBytesRegister@address address `uc  1 a 1 wreg ]
+[v i2c1_writeNBytesRegister@reg reg `uc  1 p 1 2 ]
+[v i2c1_writeNBytesRegister@data data `*.39v  1 p 2 3 ]
+[v i2c1_writeNBytesRegister@len len `uc  1 p 1 5 ]
+"249
+[v i2c1_writeNBytesRegister@address address `uc  1 a 1 6 ]
+"263
+} 0
+"162
+[v _wait4Stop wait4Stop `T(v  1 s 1 wait4Stop ]
+{
+"164
+[v wait4Stop@waitCount waitCount `uc  1 a 1 0 ]
+"180
+} 0
+"80
+[v _wait4Start wait4Start `T(v  1 s 1 wait4Start ]
+{
+"82
+[v wait4Start@waitCount waitCount `uc  1 a 1 0 ]
+"98
+} 0
+"100
+[v _wait4BusFree wait4BusFree `T(v  1 s 1 wait4BusFree ]
+{
+"102
+[v wait4BusFree@waitCount waitCount `uc  1 a 1 0 ]
+"118
+} 0
+"120
+[v _sendByte sendByte `T(v  1 s 1 sendByte ]
+{
+[v sendByte@data data `uc  1 a 1 wreg ]
+"122
+[v sendByte@delayCounter delayCounter `uc  1 a 1 1 ]
+"120
+[v sendByte@data data `uc  1 a 1 wreg ]
+"122
+[v sendByte@data data `uc  1 a 1 0 ]
+"139
+} 0
+"57
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"378 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+[v _OLED_SetFont OLED_SetFont `(v  1 e 1 0 ]
+{
+[v OLED_SetFont@font font `*.32Cuc  1 p 2 0 ]
+"386
+} 0
+"708
+[v _OLED_Image OLED_Image `(v  1 e 1 0 ]
+{
+"710
+[v OLED_Image@i i `us  1 a 2 4 ]
+"708
+[v OLED_Image@image image `*.32Cuc  1 p 2 0 ]
+"715
+} 0
+"435
+[v _OLED_ClearDisplay OLED_ClearDisplay `(v  1 e 1 0 ]
+{
+"438
+} 0
+"4 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"6
+[v memset@s s `*.39uc  1 a 2 10 ]
+"7
+[v memset@k k `ui  1 a 2 8 ]
+"4
+[v memset@dest dest `*.39v  1 p 2 0 ]
+[v memset@c c `i  1 p 2 2 ]
+[v memset@n n `ui  1 p 2 4 ]
+"90
+} 0
+"58 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"73
+} 0
+"238 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+[v _UART1_Transmit_ISR UART1_Transmit_ISR `(v  1 e 1 0 ]
+{
+"256
+} 0
+"258
+[v _UART1_Receive_ISR UART1_Receive_ISR `(v  1 e 1 0 ]
+{
+"280
+} 0
+"294
+[v _UART1_DefaultOverrunErrorHandler UART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"292
+[v _UART1_DefaultFramingErrorHandler UART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"296
+[v _UART1_DefaultErrorHandler UART1_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"298
+} 0
+"282
+[v _UART1_RxDataHandler UART1_RxDataHandler `(v  1 e 1 0 ]
+{
+"290
+} 0
