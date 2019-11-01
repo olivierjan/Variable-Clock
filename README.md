@@ -17,7 +17,7 @@ Project requires :
  - 1x 470 Ohm resistor
  - (Optional) 1x '128x64' I2C SSD1306 OLED display.
 
-
+![Schematics](/Variable%20Clock_bb.png)
 
 Usage: 
 
