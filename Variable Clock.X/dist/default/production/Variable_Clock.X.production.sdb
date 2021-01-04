@@ -138,22 +138,22 @@ I2C1_FAIL_TIMEOUT 1
 [v _OLED_DrawPixel OLED_DrawPixel `(v  1 e 1 0 ]
 "485
 [v _OLED_Line OLED_Line `(v  1 e 1 0 ]
-"610
+"611
 [v _OLED_V_Line OLED_V_Line `(v  1 e 1 0 ]
-"638
+"639
 [v _OLED_H_Line OLED_H_Line `(v  1 e 1 0 ]
-"708
+"709
 [v _OLED_Image OLED_Image `(v  1 e 1 0 ]
-"774
+"775
 [v _OLED_Write OLED_Write `(v  1 e 1 0 ]
-"857
+"858
 [v _OLED_Write_Text OLED_Write_Text `(v  1 e 1 0 ]
-"881
+"882
 [v _ssd1306_command ssd1306_command `(v  1 e 1 0 ]
-"905
-[v _width width `(uc  1 e 1 0 ]
-"910
-[v _height height `(uc  1 e 1 0 ]
+"906
+[v _width width `(s  1 e 2 0 ]
+"911
+[v _height height `(s  1 e 2 0 ]
 "518 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/uart1.h
 [v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
 "536
@@ -854,23 +854,20 @@ I2C1_FAIL_TIMEOUT 1
 {
 "56
 } 0
-"857 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
+"858 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
 [v _OLED_Write_Text OLED_Write_Text `(v  1 e 1 0 ]
 {
-[v OLED_Write_Text@x x `uc  1 a 1 wreg ]
+"861
+[v OLED_Write_Text@length length `ui  1 a 2 65 ]
+"862
+[v OLED_Write_Text@cursorpos cursorpos `s  1 a 2 63 ]
 "860
-[v OLED_Write_Text@length length `uc  1 a 1 47 ]
-"861
-[v OLED_Write_Text@cursorpos cursorpos `uc  1 a 1 46 ]
-"859
-[v OLED_Write_Text@cnt cnt `uc  1 a 1 45 ]
-"857
-[v OLED_Write_Text@x x `uc  1 a 1 wreg ]
-[v OLED_Write_Text@y y `uc  1 p 1 40 ]
-[v OLED_Write_Text@text text `*.34uc  1 p 2 41 ]
-"861
-[v OLED_Write_Text@x x `uc  1 a 1 48 ]
-"879
+[v OLED_Write_Text@cnt cnt `s  1 a 2 61 ]
+"858
+[v OLED_Write_Text@x x `s  1 p 2 53 ]
+[v OLED_Write_Text@y y `s  1 p 2 55 ]
+[v OLED_Write_Text@text text `*.34uc  1 p 2 57 ]
+"880
 } 0
 "5 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
@@ -881,77 +878,74 @@ I2C1_FAIL_TIMEOUT 1
 [v strlen@s s `*.34Cuc  1 p 2 0 ]
 "12
 } 0
-"774 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
+"775 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
 [v _OLED_Write OLED_Write `(v  1 e 1 0 ]
 {
-[v OLED_Write@x x `uc  1 a 1 wreg ]
-"778
-[v OLED_Write@cnt cnt `us  1 a 2 36 ]
-"777
-[v OLED_Write@rowcnt rowcnt `us  1 a 2 34 ]
-"782
-[v OLED_Write@cy cy `s  1 a 2 32 ]
-[v OLED_Write@cx cx `s  1 a 2 30 ]
-"776
-[v OLED_Write@font_idx font_idx `us  1 a 2 28 ]
-"783
-[v OLED_Write@cbit cbit `s  1 a 2 26 ]
-"782
-[v OLED_Write@cbyte cbyte `s  1 a 2 24 ]
 "780
-[v OLED_Write@temp temp `us  1 a 2 22 ]
+[v OLED_Write@b b `s  1 a 2 51 ]
 "779
-[v OLED_Write@b b `uc  1 a 1 38 ]
-"774
-[v OLED_Write@x x `uc  1 a 1 wreg ]
-[v OLED_Write@y y `uc  1 p 1 14 ]
-[v OLED_Write@value value `uc  1 p 1 15 ]
+[v OLED_Write@cnt cnt `s  1 a 2 49 ]
+"778
+[v OLED_Write@rowcnt rowcnt `s  1 a 2 47 ]
+"783
+[v OLED_Write@cy cy `s  1 a 2 45 ]
+[v OLED_Write@cx cx `s  1 a 2 43 ]
 "777
-[v OLED_Write@x x `uc  1 a 1 39 ]
-"846
+[v OLED_Write@font_idx font_idx `s  1 a 2 41 ]
+"784
+[v OLED_Write@cbit cbit `s  1 a 2 39 ]
+"783
+[v OLED_Write@cbyte cbyte `s  1 a 2 37 ]
+"781
+[v OLED_Write@temp temp `s  1 a 2 35 ]
+"775
+[v OLED_Write@x x `s  1 p 2 24 ]
+[v OLED_Write@y y `s  1 p 2 26 ]
+[v OLED_Write@value value `*.34uc  1 p 2 28 ]
+"847
 } 0
 "15 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 12 ]
+[v ___wmul@product product `ui  1 a 2 4 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 8 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 10 ]
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
+} 0
+"457 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
+[v _OLED_DrawPixel OLED_DrawPixel `(v  1 e 1 0 ]
+{
+[v OLED_DrawPixel@x x `s  1 p 2 14 ]
+[v OLED_DrawPixel@y y `s  1 p 2 16 ]
+[v OLED_DrawPixel@color color `uc  1 p 1 18 ]
+"468
+} 0
+"906
+[v _width width `(s  1 e 2 0 ]
+{
+"909
+} 0
+"911
+[v _height height `(s  1 e 2 0 ]
+{
+"914
 } 0
 "7 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "10
-[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
 "11
-[v ___awdiv@sign sign `uc  1 a 1 5 ]
-[v ___awdiv@counter counter `uc  1 a 1 4 ]
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
 "7
-[v ___awdiv@dividend dividend `i  1 p 2 0 ]
-[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+[v ___awdiv@dividend dividend `i  1 p 2 6 ]
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
 "41
 } 0
-"457 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
-[v _OLED_DrawPixel OLED_DrawPixel `(v  1 e 1 0 ]
-{
-[v OLED_DrawPixel@x x `us  1 p 2 0 ]
-[v OLED_DrawPixel@y y `us  1 p 2 2 ]
-[v OLED_DrawPixel@color color `uc  1 p 1 4 ]
-"468
-} 0
-"905
-[v _width width `(uc  1 e 1 0 ]
-{
-"908
-} 0
-"910
-[v _height height `(uc  1 e 1 0 ]
-{
-"913
-} 0
-"316
+"316 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
 [v _OLED_Init OLED_Init `(v  1 e 1 0 ]
 {
 "366
@@ -960,19 +954,19 @@ I2C1_FAIL_TIMEOUT 1
 [v _OLED_Update OLED_Update `(v  1 e 1 0 ]
 {
 "402
-[v OLED_Update@i i `us  1 a 2 10 ]
+[v OLED_Update@i i `s  1 a 2 11 ]
 "403
-[v OLED_Update@x x `uc  1 a 1 9 ]
+[v OLED_Update@x x `s  1 a 2 9 ]
 "427
 } 0
-"881
+"882
 [v _ssd1306_command ssd1306_command `(v  1 e 1 0 ]
 {
 [v ssd1306_command@command command `uc  1 a 1 wreg ]
 [v ssd1306_command@command command `uc  1 a 1 wreg ]
-"885
+"886
 [v ssd1306_command@command command `uc  1 a 1 5 ]
-"891
+"892
 } 0
 "203 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/i2c1.c
 [v _i2c1_write1ByteRegister i2c1_write1ByteRegister `(v  1 e 1 0 ]
@@ -1044,14 +1038,14 @@ I2C1_FAIL_TIMEOUT 1
 [v OLED_SetFont@font font `*.32Cuc  1 p 2 0 ]
 "386
 } 0
-"708
+"709
 [v _OLED_Image OLED_Image `(v  1 e 1 0 ]
 {
-"710
+"711
 [v OLED_Image@i i `us  1 a 2 4 ]
-"708
+"709
 [v OLED_Image@image image `*.32Cuc  1 p 2 0 ]
-"715
+"716
 } 0
 "435
 [v _OLED_ClearDisplay OLED_ClearDisplay `(v  1 e 1 0 ]

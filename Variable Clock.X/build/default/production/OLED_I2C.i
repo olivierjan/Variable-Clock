@@ -133,27 +133,26 @@ typedef struct _Current_Font_s
 } Current_Font_s;
 # 99 "./OLED_I2C.h"
 void OLED_Init( void );
-uint8_t OLED_Width( void );
-uint8_t OLED_Height( void );
+int16_t OLED_Width( void );
+int16_t OLED_Height( void );
 void OLED_Update( void );
 void OLED_SetContrast( uint8_t contrast );
 void OLED_ClearDisplay( void );
 void OLED_FillDisplay( void );
-void OLED_DrawPixel( uint16_t x, uint16_t y, uint8_t color);
-void OLED_InvertDisplay( uint8_t value );
+void OLED_DrawPixel( int16_t x, int16_t y, uint8_t color);
+void OLED_InvertDisplay( int16_t value );
 void OLED_SetFont( const uint8_t *font);
 void OLED_InvertFont( uint8_t invert_status );
-void OLED_Circle( int8_t x_center, int8_t y_center, uint8_t radius, uint8_t color);
-void OLED_Line( int8_t x_start, int8_t y_start, int8_t x_end, int8_t y_end, uint8_t color);
-void OLED_V_Line ( uint8_t y_start, uint8_t y_end, uint8_t x_pos, uint8_t color);
-void OLED_H_Line( uint8_t x_start, uint8_t x_end, uint8_t y_pos, uint8_t color);
-void OLED_Rectangle( uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color);
-void OLED_FillRectangle( uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color);
-void OLED_Triangle(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color);
-void OLED_Circle( int8_t x0, int8_t y, uint8_t r, uint8_t color );
+void OLED_Circle( int16_t x_center, int16_t y_center, int16_t radius, uint8_t color);
+void OLED_Line( int16_t x_start, int16_t y_start, int16_t x_end, int16_t y_end, uint8_t color);
+void OLED_V_Line ( int16_t y_start, int16_t y_end, int16_t x_pos, uint8_t color);
+void OLED_H_Line( int16_t x_start, int16_t x_end, int16_t y_pos, uint8_t color);
+void OLED_Rectangle( int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color);
+void OLED_FillRectangle( int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color);
+void OLED_Triangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color);
 void OLED_Image( const uint8_t *image);
-void OLED_Write( uint8_t x, uint8_t y, uint8_t value );
-void OLED_Write_Text(uint8_t x, uint8_t y, uint8_t *text);
+void OLED_Write( int16_t x, int16_t y, char* value );
+void OLED_Write_Text(int16_t x, int16_t y, char* text);
 # 1 "OLED_I2C.c" 2
 
 # 1 "./mcc_generated_files/i2c1.h" 1
@@ -27793,9 +27792,9 @@ static uint8_t buffer[64 * 128 / 8];
 
 void ssd1306_command( uint8_t command );
 void ssd1306_data( uint8_t value );
-uint8_t width( void );
-uint8_t height( void );
-void swap_num( uint16_t *a, uint16_t *b );
+int16_t width( void );
+int16_t height( void );
+void swap_num( int16_t *a, int16_t *b );
 
 
 
@@ -27844,12 +27843,12 @@ void OLED_Init( void )
   OLED_Update();
 }
 
-uint8_t OLED_Width( void )
+int16_t OLED_Width( void )
 {
   return width();
 }
 
-uint8_t OLED_Height( void )
+int16_t OLED_Height( void )
 {
   return height();
 }
@@ -27878,8 +27877,8 @@ void OLED_InvertFont( uint8_t invert_status )
 
 void OLED_Update( void )
 {
-  uint16_t i = 0;
-  uint8_t x = 0;
+  int16_t i = 0;
+  int16_t x = 0;
   ssd1306_command( 0x21 );
   ssd1306_command(0);
   ssd1306_command( 128 -1 );
@@ -27914,7 +27913,7 @@ void OLED_FillDisplay( void )
   memset(buffer, 0xFF, (128*64/8));
 }
 
-void OLED_InvertDisplay( uint8_t value )
+void OLED_InvertDisplay( int16_t value )
 {
   if( value )
   {
@@ -27926,9 +27925,9 @@ void OLED_InvertDisplay( uint8_t value )
   }
 }
 
-void OLED_DrawPixel( uint16_t x, uint16_t y, uint8_t color)
+void OLED_DrawPixel( int16_t x, int16_t y, uint8_t color)
 {
-  if ((x < 0) || (x >= width()) || (y < 0) || (y >= height()))
+  if ( (x >= width()) || (y >= height()))
     return;
 
   switch (color)
@@ -27939,9 +27938,10 @@ void OLED_DrawPixel( uint16_t x, uint16_t y, uint8_t color)
   }
 }
 # 485 "OLED_I2C.c"
-void OLED_Line( int8_t x_start, int8_t y_start, int8_t x_end, int8_t y_end, uint8_t color)
+void OLED_Line( int16_t x_start, int16_t y_start, int16_t x_end, int16_t y_end, uint8_t color)
 {
-  int16_t x, y, addx, addy, dx, dy;
+  int16_t x, y;
+  int16_t addx, addy, dx, dy;
   int32_t P;
   int16_t i;
   dx = abs((int16_t)(x_end - x_start));
@@ -28000,10 +28000,10 @@ void OLED_Line( int8_t x_start, int8_t y_start, int8_t x_end, int8_t y_end, uint
     }
   }
 }
-# 610 "OLED_I2C.c"
-void OLED_V_Line ( uint8_t y_start, uint8_t y_end, uint8_t x_pos, uint8_t color)
+# 611 "OLED_I2C.c"
+void OLED_V_Line ( int16_t y_start, int16_t y_end, int16_t x_pos, uint8_t color)
 {
-  uint8_t temp;
+  int16_t temp;
   if( y_start > y_end )
   {
     temp = y_start;
@@ -28017,10 +28017,10 @@ void OLED_V_Line ( uint8_t y_start, uint8_t y_end, uint8_t x_pos, uint8_t color)
     y_start++;
   }
 }
-# 638 "OLED_I2C.c"
-void OLED_H_Line( uint8_t x_start, uint8_t x_end, uint8_t y_pos, uint8_t color)
+# 639 "OLED_I2C.c"
+void OLED_H_Line( int16_t x_start, int16_t x_end, int16_t y_pos, uint8_t color)
 {
-  uint8_t temp;
+  int16_t temp;
   if( x_start > x_end )
   {
     temp = x_start;
@@ -28034,8 +28034,8 @@ void OLED_H_Line( uint8_t x_start, uint8_t x_end, uint8_t y_pos, uint8_t color)
     x_start++;
   }
 }
-# 670 "OLED_I2C.c"
-void OLED_Rectangle( uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color)
+# 671 "OLED_I2C.c"
+void OLED_Rectangle( int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color)
 {
 
 
@@ -28047,9 +28047,9 @@ void OLED_Rectangle( uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t col
   OLED_V_Line(y1, y2, x2, color);
 }
 
-void OLED_FillRectangle( uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color)
+void OLED_FillRectangle( int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color)
 {
-  uint8_t i;
+  int16_t i;
   for( i=x1; i<=x2; i++ )
   {
     OLED_V_Line(y1, y2, i, color );
@@ -28057,13 +28057,13 @@ void OLED_FillRectangle( uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t
 }
 
 
-void OLED_Triangle(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color)
+void OLED_Triangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color)
 {
   OLED_Line(x0, y0, x1, y1, color);
   OLED_Line(x1, y1, x2, y2, color);
   OLED_Line(x2, y2, x0, y0, color);
 }
-# 708 "OLED_I2C.c"
+# 709 "OLED_I2C.c"
 void OLED_Image( const uint8_t *image)
 {
   uint16_t i;
@@ -28072,14 +28072,14 @@ void OLED_Image( const uint8_t *image)
     buffer[i] = *(image+i);
   }
 }
-# 729 "OLED_I2C.c"
-void OLED_Circle( int8_t x0, int8_t y0, uint8_t r, uint8_t color )
+# 730 "OLED_I2C.c"
+void OLED_Circle( int16_t x0, int16_t y0, int16_t r, uint8_t color )
 {
-  int8_t f = 1 - r;
-  int8_t ddF_x = 1;
-  int8_t ddF_y = -2 * r;
-  int8_t x = 0;
-  int8_t y = r;
+  int16_t f = 1 - r;
+  int16_t ddF_x = 1;
+  int16_t ddF_y = -2 * r;
+  int16_t x = 0;
+  int16_t y = r;
 
   OLED_DrawPixel(x0 , y0+r, color);
   OLED_DrawPixel(x0 , y0-r, color);
@@ -28108,21 +28108,21 @@ void OLED_Circle( int8_t x0, int8_t y0, uint8_t r, uint8_t color )
     OLED_DrawPixel(x0 - y, y0 - x, color);
   }
 }
-# 774 "OLED_I2C.c"
-void OLED_Write( uint8_t x, uint8_t y, uint8_t value )
+# 775 "OLED_I2C.c"
+void OLED_Write( int16_t x, int16_t y, char* value )
 {
-  uint16_t font_idx = 0;
-  uint16_t rowcnt = 0;
-  uint16_t cnt = 0;
-  uint8_t b;
-  uint16_t temp = 0;
+  int16_t font_idx = 0;
+  int16_t rowcnt = 0;
+  int16_t cnt = 0;
+  int16_t b;
+  int16_t temp = 0;
 
   int16_t cbyte, cx, cy;
   int16_t cbit;
 
   if( cfont.y_size%8 == 0)
   {
-    font_idx = ((value-cfont.offset)*(cfont.x_size*(cfont.y_size/8))) + 4;
+    font_idx = ((*value-cfont.offset)*(cfont.x_size*(cfont.y_size/8))) + 4;
     for ( rowcnt=0; rowcnt<(cfont.y_size/8); rowcnt++ )
     {
       for( cnt=0; cnt<cfont.x_size; cnt++ )
@@ -28150,7 +28150,7 @@ void OLED_Write( uint8_t x, uint8_t y, uint8_t value )
   }
   else
   {
-    font_idx = ((value-cfont.offset)*((cfont.x_size*cfont.y_size)/8)) + 4;
+    font_idx = ((*value-cfont.offset)*((cfont.x_size*cfont.y_size)/8)) + 4;
     cbyte = *(cfont.font + font_idx);
     cbit = 7;
     for ( cx=0; cx<cfont.x_size; cx++ )
@@ -28182,27 +28182,27 @@ void OLED_Write( uint8_t x, uint8_t y, uint8_t value )
     }
   }
 }
-# 857 "OLED_I2C.c"
-void OLED_Write_Text(uint8_t x, uint8_t y, uint8_t *text)
+# 858 "OLED_I2C.c"
+void OLED_Write_Text(int16_t x, int16_t y, char* text)
 {
-  uint8_t cnt;
-  uint8_t length;
-  uint8_t cursorpos=0;
+  int16_t cnt;
+  size_t length;
+  int16_t cursorpos=0;
 
   length = strlen(text);
   if (x == 254)
-    x = 128-(length*cfont.x_size);
+    x = 128-((int16_t)length*cfont.x_size);
   if (x == 255)
-    x = (128-(length*cfont.x_size))/2;
+    x = (128-((int16_t)length*cfont.x_size))/2;
 
   for ( cnt=0; cnt<length; cnt++ )
 
     if (*text == 0x0a){
         y+=cfont.y_size;
-        *text++;
+        text++;
         cursorpos=0;
     } else {
-        OLED_Write(x + (cursorpos*(cfont.x_size)), y, *text++ );
+        OLED_Write(x + (cursorpos*(cfont.x_size)), y, text++ );
         cursorpos++;
     }
 }
@@ -28231,19 +28231,19 @@ void ssd1306_data( uint8_t value )
 
 }
 
-uint8_t width( void )
+int16_t width( void )
 {
   return 128;
 }
 
-uint8_t height( void )
+int16_t height( void )
 {
   return 64;
 }
 
-void swap_num( uint16_t *a, uint16_t *b )
+void swap_num( int16_t *a, int16_t *b )
 {
-  uint16_t temp = *a;
+  int16_t temp = *a;
   *a = *b;
   *b = temp;
 }

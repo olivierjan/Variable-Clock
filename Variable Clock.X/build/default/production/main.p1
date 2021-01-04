@@ -26,9 +26,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "104 ./OLED_I2C.h
 [; ;./OLED_I2C.h: 104: void OLED_ClearDisplay( void );
 [v _OLED_ClearDisplay `(v ~T0 @X0 0 ef ]
-"120
-[; ;./OLED_I2C.h: 120: void OLED_Write_Text(uint8_t x, uint8_t y, uint8_t *text);
-[v _OLED_Write_Text `(v ~T0 @X0 0 ef3`uc`uc`*uc ]
+"119
+[; ;./OLED_I2C.h: 119: void OLED_Write_Text(int16_t x, int16_t y, char* text);
+[v _OLED_Write_Text `(v ~T0 @X0 0 ef3`s`s`*uc ]
 "102
 [; ;./OLED_I2C.h: 102: void OLED_Update( void );
 [v _OLED_Update `(v ~T0 @X0 0 ef ]
@@ -2392,14 +2392,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 95:     freqvalue=freqvalue>>21;
 [e = _freqvalue >> _freqvalue -> 21 `i ]
 "99
-[; ;main.c: 99:     sprintf(frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
+[; ;main.c: 99:     sprintf((char *)frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
 [e ( _sprintf (1 , (. , &U _frequencytext :s 1C _freqvalue ]
 "100
 [; ;main.c: 100:     OLED_ClearDisplay();
 [e ( _OLED_ClearDisplay ..  ]
 "101
-[; ;main.c: 101:     OLED_Write_Text(0,0,&frequencytext);
-[e ( _OLED_Write_Text (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> &U _frequencytext `*uc ]
+[; ;main.c: 101:     OLED_Write_Text(0,0,frequencytext);
+[e ( _OLED_Write_Text (3 , , -> -> 0 `i `s -> -> 0 `i `s &U _frequencytext ]
 "102
 [; ;main.c: 102:     OLED_Update();
 [e ( _OLED_Update ..  ]
@@ -2431,10 +2431,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _OLED_ClearDisplay ..  ]
 "126
 [; ;main.c: 126:                 OLED_Write_Text(255,0,"Manual Mode");
-[e ( _OLED_Write_Text (3 , , -> -> 255 `i `uc -> -> 0 `i `uc :s 2C ]
+[e ( _OLED_Write_Text (3 , , -> -> 255 `i `s -> -> 0 `i `s :s 2C ]
 "127
 [; ;main.c: 127:                 OLED_Write_Text(0,24,"Press any button\nto Toggle Clock");
-[e ( _OLED_Write_Text (3 , , -> -> 0 `i `uc -> -> 24 `i `uc :s 3C ]
+[e ( _OLED_Write_Text (3 , , -> -> 0 `i `s -> -> 24 `i `s :s 3C ]
 "128
 [; ;main.c: 128:                 OLED_Update();
 [e ( _OLED_Update ..  ]
@@ -2463,8 +2463,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 140:                 OLED_ClearDisplay();
 [e ( _OLED_ClearDisplay ..  ]
 "141
-[; ;main.c: 141:                 OLED_Write_Text(0,0,&frequencytext);
-[e ( _OLED_Write_Text (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> &U _frequencytext `*uc ]
+[; ;main.c: 141:                 OLED_Write_Text(0,0,frequencytext);
+[e ( _OLED_Write_Text (3 , , -> -> 0 `i `s -> -> 0 `i `s &U _frequencytext ]
 "142
 [; ;main.c: 142:                 OLED_Update();
 [e ( _OLED_Update ..  ]
@@ -2499,7 +2499,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "156
 [; ;main.c: 156:                 OLED_Write_Text(255,0,"HIGH");
-[e ( _OLED_Write_Text (3 , , -> -> 255 `i `uc -> -> 0 `i `uc :s 5C ]
+[e ( _OLED_Write_Text (3 , , -> -> 255 `i `s -> -> 0 `i `s :s 5C ]
 "157
 [; ;main.c: 157:             } else {
 }
@@ -2508,14 +2508,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "158
 [; ;main.c: 158:                 OLED_Write_Text(255,0,"LOW");
-[e ( _OLED_Write_Text (3 , , -> -> 255 `i `uc -> -> 0 `i `uc :s 6C ]
+[e ( _OLED_Write_Text (3 , , -> -> 255 `i `s -> -> 0 `i `s :s 6C ]
 "159
 [; ;main.c: 159:             }
 }
 [e :U 2246 ]
 "160
 [; ;main.c: 160:             OLED_Write_Text(0,24,"Press + and -\nfor automatic mode");
-[e ( _OLED_Write_Text (3 , , -> -> 0 `i `uc -> -> 24 `i `uc :s 7C ]
+[e ( _OLED_Write_Text (3 , , -> -> 0 `i `s -> -> 24 `i `s :s 7C ]
 "161
 [; ;main.c: 161:             OLED_Update();
 [e ( _OLED_Update ..  ]
@@ -2546,8 +2546,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 177:             OLED_ClearDisplay();
 [e ( _OLED_ClearDisplay ..  ]
 "178
-[; ;main.c: 178:             OLED_Write_Text(0,0,&frequencytext);
-[e ( _OLED_Write_Text (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> &U _frequencytext `*uc ]
+[; ;main.c: 178:             OLED_Write_Text(0,0,frequencytext);
+[e ( _OLED_Write_Text (3 , , -> -> 0 `i `s -> -> 0 `i `s &U _frequencytext ]
 "179
 [; ;main.c: 179:             OLED_Update();
 [e ( _OLED_Update ..  ]
@@ -2575,8 +2575,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 195:             OLED_ClearDisplay();
 [e ( _OLED_ClearDisplay ..  ]
 "196
-[; ;main.c: 196:             OLED_Write_Text(0,0,&frequencytext);
-[e ( _OLED_Write_Text (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> &U _frequencytext `*uc ]
+[; ;main.c: 196:             OLED_Write_Text(0,0,frequencytext);
+[e ( _OLED_Write_Text (3 , , -> -> 0 `i `s -> -> 0 `i `s &U _frequencytext ]
 "197
 [; ;main.c: 197:             OLED_Update();
 [e ( _OLED_Update ..  ]

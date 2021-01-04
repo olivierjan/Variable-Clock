@@ -27408,27 +27408,26 @@ typedef struct _Current_Font_s
 } Current_Font_s;
 # 99 "./OLED_I2C.h"
 void OLED_Init( void );
-uint8_t OLED_Width( void );
-uint8_t OLED_Height( void );
+int16_t OLED_Width( void );
+int16_t OLED_Height( void );
 void OLED_Update( void );
 void OLED_SetContrast( uint8_t contrast );
 void OLED_ClearDisplay( void );
 void OLED_FillDisplay( void );
-void OLED_DrawPixel( uint16_t x, uint16_t y, uint8_t color);
-void OLED_InvertDisplay( uint8_t value );
+void OLED_DrawPixel( int16_t x, int16_t y, uint8_t color);
+void OLED_InvertDisplay( int16_t value );
 void OLED_SetFont( const uint8_t *font);
 void OLED_InvertFont( uint8_t invert_status );
-void OLED_Circle( int8_t x_center, int8_t y_center, uint8_t radius, uint8_t color);
-void OLED_Line( int8_t x_start, int8_t y_start, int8_t x_end, int8_t y_end, uint8_t color);
-void OLED_V_Line ( uint8_t y_start, uint8_t y_end, uint8_t x_pos, uint8_t color);
-void OLED_H_Line( uint8_t x_start, uint8_t x_end, uint8_t y_pos, uint8_t color);
-void OLED_Rectangle( uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color);
-void OLED_FillRectangle( uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color);
-void OLED_Triangle(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color);
-void OLED_Circle( int8_t x0, int8_t y, uint8_t r, uint8_t color );
+void OLED_Circle( int16_t x_center, int16_t y_center, int16_t radius, uint8_t color);
+void OLED_Line( int16_t x_start, int16_t y_start, int16_t x_end, int16_t y_end, uint8_t color);
+void OLED_V_Line ( int16_t y_start, int16_t y_end, int16_t x_pos, uint8_t color);
+void OLED_H_Line( int16_t x_start, int16_t x_end, int16_t y_pos, uint8_t color);
+void OLED_Rectangle( int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color);
+void OLED_FillRectangle( int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color);
+void OLED_Triangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color);
 void OLED_Image( const uint8_t *image);
-void OLED_Write( uint8_t x, uint8_t y, uint8_t value );
-void OLED_Write_Text(uint8_t x, uint8_t y, uint8_t *text);
+void OLED_Write( int16_t x, int16_t y, char* value );
+void OLED_Write_Text(int16_t x, int16_t y, char* text);
 # 46 "main.c" 2
 
 # 1 "/Applications/microchip/xc8/v2.31/pic/include/c99/math.h" 1 3
@@ -27835,9 +27834,9 @@ void main(void)
 
 
 
-    sprintf(frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
+    sprintf((char *)frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
     OLED_ClearDisplay();
-    OLED_Write_Text(0,0,&frequencytext);
+    OLED_Write_Text(0,0,frequencytext);
     OLED_Update();
 
     while (1)
@@ -27877,7 +27876,7 @@ void main(void)
                 freqvalue=freqvalue>>21;
                 sprintf(frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
                 OLED_ClearDisplay();
-                OLED_Write_Text(0,0,&frequencytext);
+                OLED_Write_Text(0,0,frequencytext);
                 OLED_Update();
             }
             _delay((unsigned long)((500)*(64000000/4000.0)));
@@ -27914,7 +27913,7 @@ void main(void)
             freqvalue=freqvalue>>21;
             sprintf(frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
             OLED_ClearDisplay();
-            OLED_Write_Text(0,0,&frequencytext);
+            OLED_Write_Text(0,0,frequencytext);
             OLED_Update();
         }
 
@@ -27932,7 +27931,7 @@ void main(void)
             freqvalue=freqvalue>>21;
             sprintf(frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
             OLED_ClearDisplay();
-            OLED_Write_Text(0,0,&frequencytext);
+            OLED_Write_Text(0,0,frequencytext);
             OLED_Update();
         }
 

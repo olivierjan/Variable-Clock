@@ -96,9 +96,9 @@ void main(void)
     
     // Initial display of frequency
     
-    sprintf(frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
+    sprintf((char *)frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
     OLED_ClearDisplay();
-    OLED_Write_Text(0,0,&frequencytext);
+    OLED_Write_Text(0,0,frequencytext);
     OLED_Update();
     
     while (1)
@@ -138,7 +138,7 @@ void main(void)
                 freqvalue=freqvalue>>21;
                 sprintf(frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
                 OLED_ClearDisplay();
-                OLED_Write_Text(0,0,&frequencytext);
+                OLED_Write_Text(0,0,frequencytext);
                 OLED_Update();
             }
             __delay_ms(500);
@@ -175,7 +175,7 @@ void main(void)
             freqvalue=freqvalue>>21;
             sprintf(frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
             OLED_ClearDisplay();
-            OLED_Write_Text(0,0,&frequencytext);
+            OLED_Write_Text(0,0,frequencytext);
             OLED_Update();
         }
         
@@ -193,7 +193,7 @@ void main(void)
             freqvalue=freqvalue>>21;
             sprintf(frequencytext, "Speed: %0u kHz\n\nPress + and -\nfor manual mode", freqvalue);
             OLED_ClearDisplay();
-            OLED_Write_Text(0,0,&frequencytext);
+            OLED_Write_Text(0,0,frequencytext);
             OLED_Update();
         }
         
