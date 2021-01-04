@@ -3,68 +3,68 @@
 [d edition pro ]
 [d chip 18F46K42 ]
 [d frameptr 16353 ]
-"55 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/i2c1.c
-[e E16051 . `uc
+"55 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/i2c1.c
+[e E16056 . `uc
 I2C1_GOOD 0
 I2C1_FAIL_TIMEOUT 1
 ]
-"1 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/abs.c
+"1 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/abs.c
 [v _abs abs `(i  1 e 2 0 ]
-"7 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/awdiv.c
+"7 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"72 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+"72 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/doprnt.c
 [v _pad pad `(i  1 s 2 pad ]
-"593
+"615
 [v _utoa utoa `(i  1 s 2 utoa ]
-"670
+"692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
-"1368
+"1390
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
-"4 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/fleq.c
+"4 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"62 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/float.c
+"62 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"86 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/ftadd.c
+"86 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/ftdiv.c
+"54 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/ftmul.c
+"62 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/ftsub.c
+"19 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/lodiv.c
+"9 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/lodiv.c
 [v ___lodiv __lodiv `(uo  1 e 8 0 ]
-"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/lomod.c
+"9 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/lomod.c
 [v ___lomod __lomod `(uo  1 e 8 0 ]
-"4 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/memset.c
+"4 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/memset.c
 [v _memset memset `(*.39v  1 e 2 0 ]
-"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputc.c
+"8 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
-"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputs.c
+"8 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
-"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_sprintf.c
+"9 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
-"10 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/sprcadd.c
+"10 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/sprcdiv.c
+"11 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/sprcmul.c
+"8 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"5 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/strlen.c
+"5 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
-"15 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul16.c
+"15 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+"15 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+"91 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"57 /Users/ojan/MPLABXProjects/Variable Clock.X/main.c
+"57 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/main.c
 [v _main main `(v  1 e 1 0 ]
-"157
-[v _saveCounter saveCounter `(v  1 e 1 0 ]
-"57 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/i2c1.c
+"204
+[v _savecounter savecounter `(v  1 e 1 0 ]
+"57 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/i2c1.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 "80
 [v _wait4Start wait4Start `T(v  1 s 1 wait4Start ]
@@ -82,21 +82,21 @@ I2C1_FAIL_TIMEOUT 1
 [v _i2c1_write1ByteRegister i2c1_write1ByteRegister `(v  1 e 1 0 ]
 "247
 [v _i2c1_writeNBytesRegister i2c1_writeNBytesRegister `(v  1 e 1 0 ]
-"52 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/interrupt_manager.c
+"52 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "58
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"50 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/mcc.c
+"50 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "61
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "75
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"58 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/nco1.c
+"58 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/nco1.c
 [v _NCO1_Initialize NCO1_Initialize `(v  1 e 1 0 ]
-"55 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/pin_manager.c
+"55 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"86 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+"86 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 "179
 [v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
@@ -126,7 +126,7 @@ I2C1_FAIL_TIMEOUT 1
 [v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
 "318
 [v _UART1_SetTxInterruptHandler UART1_SetTxInterruptHandler `(v  1 e 1 0 ]
-"316 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+"316 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
 [v _OLED_Init OLED_Init `(v  1 e 1 0 ]
 "378
 [v _OLED_SetFont OLED_SetFont `(v  1 e 1 0 ]
@@ -154,7 +154,7 @@ I2C1_FAIL_TIMEOUT 1
 [v _width width `(uc  1 e 1 0 ]
 "910
 [v _height height `(uc  1 e 1 0 ]
-"518 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.h
+"518 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/uart1.h
 [v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
 "536
 [v _UART1_TxInterruptHandler UART1_TxInterruptHandler `*.37(v  1 e 2 0 ]
@@ -167,7 +167,7 @@ I2C1_FAIL_TIMEOUT 1
 `uc 1 U1IE 1 0 :1:6 
 `uc 1 TMR0IE 1 0 :1:7 
 ]
-"3668 /Applications/microchip/xc8/v2.10/pic/include/pic18f46k42.h
+"3668 /Applications/microchip/mplabx/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8/pic/include/proc/pic18f46k42.h
 [s S158 . 1 `uc 1 RXB0IE 1 0 :1:0 
 `uc 1 RXB1IE 1 0 :1:1 
 `uc 1 TXB0IE 1 0 :1:2 
@@ -580,17 +580,17 @@ I2C1_FAIL_TIMEOUT 1
 "46955
 "46955
 [v _INTCON0bits INTCON0bits `VES134  1 e 1 @16338 ]
-"55 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+"55 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/doprnt.c
 [v _flags flags `i  1 s 2 flags ]
 [v _prec prec `i  1 s 2 prec ]
-[v doprnt@width width `i  1 s 2 width ]
+[v _width@doprnt$F1664 width `i  1 s 2 width ]
 "66
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"55 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/i2c1.c
-[v _lastError lastError `E16051  1 s 1 lastError ]
-"63 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+"55 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/i2c1.c
+[v _lastError lastError `E16056  1 s 1 lastError ]
+"63 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/uart1.c
 [v _uart1TxHead uart1TxHead `VEuc  1 s 1 uart1TxHead ]
 "64
 [v _uart1TxTail uart1TxTail `VEuc  1 s 1 uart1TxTail ]
@@ -622,7 +622,7 @@ I2C1_FAIL_TIMEOUT 1
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "80
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"8 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+"8 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
 [v _LARGE_FONTS LARGE_FONTS `C[1524]uc  1 e 1524 0 ]
 [s S988 _Current_Font_s 7 `*.32Cuc 1 font 2 0 `uc 1 x_size 1 2 `uc 1 y_size 1 3 `uc 1 offset 1 4 `uc 1 numchars 1 5 `uc 1 inverted 1 6 ]
 "233
@@ -631,25 +631,27 @@ I2C1_FAIL_TIMEOUT 1
 [v _SOjavaLogo SOjavaLogo `C[1024]uc  1 e 1024 0 ]
 "304
 [v _buffer buffer `[1024]uc  1 s 1024 buffer ]
-"57 /Users/ojan/MPLABXProjects/Variable Clock.X/main.c
+"57 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "79
 [v main@frequencytext frequencytext `[48]uc  1 a 48 30 ]
 "77
-[v main@FREQvalue FREQvalue `uo  1 a 8 79 ]
+[v main@freqvalue freqvalue `uo  1 a 8 87 ]
+"75
+[v main@xtalfreq xtalfreq `Cuo  1 a 8 78 ]
 "76
-[v main@NCOCounter NCOCounter `um  1 a 3 87 ]
+[v main@ncocounter ncocounter `um  1 a 3 95 ]
 "78
-[v main@automaticclock automaticclock `a  1 a 1 78 ]
-"155
+[v main@automaticclock automaticclock `a  1 a 1 86 ]
+"202
 } 0
-"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_sprintf.c
+"9 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[s S1675 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[s S1617 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
 "13
-[v sprintf@f f `S1675  1 a 6 16 ]
+[v sprintf@f f `S1617  1 a 6 16 ]
 "12
 [v sprintf@ap ap `[1]*.39v  1 a 2 14 ]
 "9
@@ -657,46 +659,46 @@ I2C1_FAIL_TIMEOUT 1
 [v sprintf@fmt fmt `*.32Cuc  1 p 2 2 ]
 "23
 } 0
-"1368 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/doprnt.c
+"1390 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-"1371
+"1393
 [v vfprintf@cfmt cfmt `*.32uc  1 a 2 87 ]
-[s S1171 _IO_FILE 0 ]
-"1368
-[v vfprintf@fp fp `*.39S1171  1 p 2 81 ]
+[s S1643 _IO_FILE 0 ]
+"1390
+[v vfprintf@fp fp `*.39S1643  1 p 2 81 ]
 [v vfprintf@fmt fmt `*.32Cuc  1 p 2 83 ]
 [v vfprintf@ap ap `*.39*.39v  1 p 2 85 ]
-"1382
+"1404
 } 0
-"670
+"692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-"675
+"697
 [v vfpfcnvrt@llu llu `uo  1 a 8 71 ]
-"673
+"695
 [v vfpfcnvrt@done done `i  1 a 2 79 ]
-[s S1171 _IO_FILE 0 ]
-"670
-[v vfpfcnvrt@fp fp `*.39S1171  1 p 2 61 ]
+[s S1643 _IO_FILE 0 ]
+"692
+[v vfpfcnvrt@fp fp `*.39S1643  1 p 2 61 ]
 [v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 63 ]
 [v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 65 ]
-"1365
+"1387
 } 0
-"593
+"615
 [v _utoa utoa `(i  1 s 2 utoa ]
 {
-"596
+"618
 [v utoa@n n `uo  1 a 8 51 ]
-"595
+"617
 [v utoa@i i `i  1 a 2 59 ]
 [v utoa@w w `i  1 a 2 49 ]
 [v utoa@p p `i  1 a 2 47 ]
-[s S1171 _IO_FILE 0 ]
-"593
-[v utoa@fp fp `*.39S1171  1 p 2 29 ]
+[s S1643 _IO_FILE 0 ]
+"615
+[v utoa@fp fp `*.39S1643  1 p 2 29 ]
 [v utoa@d d `uo  1 p 8 31 ]
-"619
+"641
 } 0
 "72
 [v _pad pad `(i  1 s 2 pad ]
@@ -704,14 +706,14 @@ I2C1_FAIL_TIMEOUT 1
 "74
 [v pad@w w `i  1 a 2 27 ]
 [v pad@i i `i  1 a 2 25 ]
-[s S1171 _IO_FILE 0 ]
+[s S1643 _IO_FILE 0 ]
 "72
-[v pad@fp fp `*.39S1171  1 p 2 18 ]
+[v pad@fp fp `*.39S1643  1 p 2 18 ]
 [v pad@buf buf `*.39uc  1 p 2 20 ]
 [v pad@p p `i  1 p 2 22 ]
 "95
 } 0
-"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputs.c
+"8 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
 {
 "11
@@ -720,19 +722,19 @@ I2C1_FAIL_TIMEOUT 1
 [v fputs@c c `uc  1 a 1 15 ]
 "8
 [v fputs@s s `*.39Cuc  1 p 2 11 ]
-[s S1675 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputs@fp fp `*.39S1675  1 p 2 13 ]
+[s S1617 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S1617  1 p 2 13 ]
 "19
 } 0
-"8 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/nf_fputc.c
+"8 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 2 ]
-[s S1675 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputc@fp fp `*.39S1675  1 p 2 4 ]
-"21
+[s S1617 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S1617  1 p 2 4 ]
+"24
 } 0
-"229 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+"229 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/uart1.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 [v putch@txData txData `uc  1 a 1 wreg ]
@@ -749,7 +751,7 @@ I2C1_FAIL_TIMEOUT 1
 [v UART1_Write@txData txData `uc  1 a 1 0 ]
 "222
 } 0
-"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/lomod.c
+"9 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/lomod.c
 [v ___lomod __lomod `(uo  1 e 8 0 ]
 {
 "12
@@ -759,7 +761,7 @@ I2C1_FAIL_TIMEOUT 1
 [v ___lomod@divisor divisor `uo  1 p 8 8 ]
 "27
 } 0
-"9 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/lodiv.c
+"9 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/lodiv.c
 [v ___lodiv __lodiv `(uo  1 e 8 0 ]
 {
 "12
@@ -771,13 +773,13 @@ I2C1_FAIL_TIMEOUT 1
 [v ___lodiv@divisor divisor `uo  1 p 8 8 ]
 "32
 } 0
-"157 /Users/ojan/MPLABXProjects/Variable Clock.X/main.c
-[v _saveCounter saveCounter `(v  1 e 1 0 ]
+"204 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/main.c
+[v _savecounter savecounter `(v  1 e 1 0 ]
 {
-[v saveCounter@Counter Counter `um  1 p 3 0 ]
-"164
+[v savecounter@Counter Counter `um  1 p 3 0 ]
+"211
 } 0
-"91 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+"91 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
 {
 "93
@@ -787,12 +789,12 @@ I2C1_FAIL_TIMEOUT 1
 [v ___omul@multiplicand multiplicand `uo  1 p 8 8 ]
 "354
 } 0
-"50 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/mcc.c
+"50 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "59
 } 0
-"86 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+"86 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 {
 "158
@@ -827,32 +829,32 @@ I2C1_FAIL_TIMEOUT 1
 [v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "310
 } 0
-"75 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/mcc.c
+"75 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "93
 } 0
-"55 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/pin_manager.c
+"55 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "143
 } 0
-"61 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/mcc.c
+"61 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "73
 } 0
-"58 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/nco1.c
+"58 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/nco1.c
 [v _NCO1_Initialize NCO1_Initialize `(v  1 e 1 0 ]
 {
 "81
 } 0
-"52 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/interrupt_manager.c
+"52 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "56
 } 0
-"857 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+"857 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
 [v _OLED_Write_Text OLED_Write_Text `(v  1 e 1 0 ]
 {
 [v OLED_Write_Text@x x `uc  1 a 1 wreg ]
@@ -870,7 +872,7 @@ I2C1_FAIL_TIMEOUT 1
 [v OLED_Write_Text@x x `uc  1 a 1 48 ]
 "879
 } 0
-"5 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/strlen.c
+"5 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
 {
 "7
@@ -879,7 +881,7 @@ I2C1_FAIL_TIMEOUT 1
 [v strlen@s s `*.34Cuc  1 p 2 0 ]
 "12
 } 0
-"774 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+"774 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
 [v _OLED_Write OLED_Write `(v  1 e 1 0 ]
 {
 [v OLED_Write@x x `uc  1 a 1 wreg ]
@@ -908,7 +910,7 @@ I2C1_FAIL_TIMEOUT 1
 [v OLED_Write@x x `uc  1 a 1 39 ]
 "846
 } 0
-"15 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul16.c
+"15 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -918,7 +920,7 @@ I2C1_FAIL_TIMEOUT 1
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 10 ]
 "53
 } 0
-"7 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/awdiv.c
+"7 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "10
@@ -931,7 +933,7 @@ I2C1_FAIL_TIMEOUT 1
 [v ___awdiv@divisor divisor `i  1 p 2 2 ]
 "41
 } 0
-"457 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+"457 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
 [v _OLED_DrawPixel OLED_DrawPixel `(v  1 e 1 0 ]
 {
 [v OLED_DrawPixel@x x `us  1 p 2 0 ]
@@ -972,7 +974,7 @@ I2C1_FAIL_TIMEOUT 1
 [v ssd1306_command@command command `uc  1 a 1 5 ]
 "891
 } 0
-"203 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/i2c1.c
+"203 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/i2c1.c
 [v _i2c1_write1ByteRegister i2c1_write1ByteRegister `(v  1 e 1 0 ]
 {
 [v i2c1_write1ByteRegister@address address `uc  1 a 1 wreg ]
@@ -1036,7 +1038,7 @@ I2C1_FAIL_TIMEOUT 1
 {
 "73
 } 0
-"378 /Users/ojan/MPLABXProjects/Variable Clock.X/OLED_I2C.c
+"378 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/OLED_I2C.c
 [v _OLED_SetFont OLED_SetFont `(v  1 e 1 0 ]
 {
 [v OLED_SetFont@font font `*.32Cuc  1 p 2 0 ]
@@ -1056,7 +1058,7 @@ I2C1_FAIL_TIMEOUT 1
 {
 "438
 } 0
-"4 /Applications/microchip/xc8/v2.10/pic/sources/c99/common/memset.c
+"4 /Applications/microchip/xc8/v2.31/pic/sources/c99/common/memset.c
 [v _memset memset `(*.39v  1 e 2 0 ]
 {
 "6
@@ -1069,12 +1071,12 @@ I2C1_FAIL_TIMEOUT 1
 [v memset@n n `ui  1 p 2 4 ]
 "90
 } 0
-"58 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/interrupt_manager.c
+"58 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
 "73
 } 0
-"238 /Users/ojan/MPLABXProjects/Variable Clock.X/mcc_generated_files/uart1.c
+"238 /Users/ojan/Documents/GitHub/Variable Clock/Variable Clock.X/mcc_generated_files/uart1.c
 [v _UART1_Transmit_ISR UART1_Transmit_ISR `(v  1 e 1 0 ]
 {
 "256

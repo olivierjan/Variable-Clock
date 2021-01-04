@@ -38,7 +38,7 @@
 // TODO Insert C++ class definitions if appropriate
 
 // TODO Insert declarations
-void saveCounter(__uint24 );
+void savecounter(__uint24 );
 
 // Comment a function and leverage automatic documentation with slash star star
 /**
